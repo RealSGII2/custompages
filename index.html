@@ -1,0 +1,137 @@
+<html>
+
+<head>
+	<title>Custom Pages</title>
+	<meta name="theme-color" content="#2F3136">
+	<meta name="description" content="Custom websites by RealSGII2 for Discord users.">
+	<meta name="og:site_name" content="RealSGII2">
+  <style>
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap");
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 1rem;
+    background-color: #202225;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+  }
+
+  .card {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 1rem;
+    border-radius: 6px;
+    background-color: #292b2f;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    width: 480px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .card .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--src);
+    filter: brightness(0.75) blur(6px);
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: 500ms ease;
+    opacity: 0.5;
+  }
+  .card .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: 500ms ease;
+  }
+  .card span {
+    z-index: 2;
+  }
+  .card:hover .cover {
+    box-shadow: inset 0 0 10px white;
+  }
+  .card:hover .background {
+    transform: scale(1.1);
+  }
+
+  h2 {
+    font-weight: 300;
+    letter-spacing: 0.25px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .muted {
+    opacity: 0.15;
+    font-size: 12px;
+  }
+  </style>
+</head>
+
+<body>
+	<img src="https://cdn.discordapp.com/attachments/159964091157446656/792477265770315816/8f730502b7d85a644728670453bf24a4.png">
+  <h2>
+    Custom Pages
+  </h2>
+
+  <div class="card" onclick="window.location.href='//johngreen.realsgii2.dev'">
+    <div class="background" style="--src: url('https://cdn.discordapp.com/attachments/589352705227751424/792609147631829002/johngreen.gif')"></div>
+    <span>
+      John Green
+    </span>
+    <div class="cover"></div>
+  </div>
+
+  <div class="card" onclick="window.location.href='//supernaturalist.realsgii2.dev'">
+    <div class="background" style="--src: url('https://cdn.discordapp.com/attachments/665330887402979348/792598327572299816/unknown.png')"></div>
+    <span>
+      Supernaturalist
+    </span>
+    <div class="cover"></div>
+  </div>
+
+  <div class="card" onclick="window.location.href='//djextinct.realsgii2.dev'">
+    <div class="background" style="--src: url('https://cdn.discordapp.com/attachments/665330887402979348/792602960584114196/djextinct.gif')"></div>
+    <span>
+      DJextinct
+    </span>
+    <div class="cover"></div>
+  </div>
+
+  <p>
+    These pages are made under request by RealSGII2.
+  </p>
+
+  <p class="muted">
+    RealSGII2
+  </p>
+</body>
+
+</html>
